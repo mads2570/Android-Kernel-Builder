@@ -1,8 +1,8 @@
 [  {
     "kernelSource": {
       "name": "mads-KernelSU",
-      "repo": "https://github.com/itejo443/android_kernel_samsung_sm7225.git",
-      "branch": "ksm",
+      "repo": "https://github.com/mads2570/android_kernel_samsung_sm7225.git",
+      "branch": "21.0",
       "device": "a42xq"
     },
     "withKernelSU": true,
