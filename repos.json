@@ -8,14 +8,14 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://github.com/llvm/llvm-project.git",
-        "branch": "revert-107849-prologue-end-faff-final",
-        "name": "gaz"
+        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "branch": "master",
+        "name": "clang"
       },
       {
-        "repo": "https://github.com/llvm/llvm-project.git",
-        "branch": "main",
-        "name": "gav"
+        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
+        "branch": "android-14.0.0_r0.47",
+        "name": "gcc"
       }
     ],
     "params": {
