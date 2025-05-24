@@ -16,7 +16,6 @@ jobs:
     steps:
       - name: Clean Kernel Source
         run: make mrproper
-        working-directory: mads-KernelSU_a42xq/mads-KernelSU
 
       - name: "😄 Checkout"
         uses: actions/checkout@v4
