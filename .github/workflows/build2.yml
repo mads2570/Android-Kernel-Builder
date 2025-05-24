@@ -62,11 +62,11 @@ jobs:
         with:
           submodules: true
           repository: itejo443/AnyKernel3
-          ref: m23xq
+          ref: a42xq
           path: anykernel
 
       - name: Setup Ccache
-        uses: hendrikmuhs/ccache-action@v1.2
+        uses: hendrikmuhs/ccache-action@v4
         with:
           key: Build-USUKernel-${{ matrix.device }}
           save: ${{ github.event_name != 'pull_request' }}
