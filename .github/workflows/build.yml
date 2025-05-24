@@ -1,3 +1,11 @@
+- name: Cache build dependencies
+  uses: actions/cache@v3
+  with:
+    path: ~/.cache
+    key: ${{ runner.os }}-dependencies-${{ hashFiles('**/repos.json') }}
+    restore-keys: |
+      ${{ runner.os }}-dependencies-
+
 name: "Build kernels"
 
 env:
