@@ -19,7 +19,7 @@ jobs:
         
       - name: Clean kernel source
         run: make mrproper
-        working-directory: ./mads-KernelSU_a42xq/mads-KernelSU
+        working-directory: ./${{ env.kernelDir }}
 
       - name: "😆 Generate Matrix"
         id: generate-matrix
