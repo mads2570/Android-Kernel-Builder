@@ -186,6 +186,8 @@ jobs:
           path: ./${{ env.kernelDir }}/${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtb
           if-no-files-found: ignore
           retention-days: 7
+       continue-on-error: true
+          
 
       - name: "❤️ Upload dtbo.img"
         uses: actions/upload-artifact@v4
