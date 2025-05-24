@@ -16,10 +16,6 @@ jobs:
     steps:
       - name: "😄 Checkout"
         uses: actions/checkout@v4
-        
-      - name: Clean kernel source
-        run: make mrproper
-        working-directory: ./${{ env.kernelDir }}
 
       - name: "😆 Generate Matrix"
         id: generate-matrix
