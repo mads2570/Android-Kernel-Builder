@@ -8,8 +8,8 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://gitlab.com/mohdfazil130155/android_prebuilts_clang-standalone.git",
-        "branch": "14",
+        "repo": "https://github.com/J0SH1X/clang-r353983.git",
+        "branch": "master",
         "name": "gas"
       },
       {
