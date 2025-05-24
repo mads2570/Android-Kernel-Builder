@@ -24,8 +24,7 @@
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
       "KERNEL_MAKE_ENV" : "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y CLANG_TRIPLE=aarch64-linux-gnu-",
-      "KERNEL_MAKE_ENV": "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y CLANG_TRIPLE=aarch64-linux-gnu- vendor/a42xq_eur_open_defconfig",
-      "CC": "LLVM=1 LLVM_IAS=1 vendor/a42xq_eur_open_defconfig"
+      "CC": "LLVM=1 LLVM_IAS=1 "
     }
   }
 ]
