@@ -1,4 +1,4 @@
-name: Build USUKernel A14 with KernelSU
+name: Build kernels
 
 on:
   release:
