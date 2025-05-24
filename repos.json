@@ -1,9 +1,9 @@
 [  {
     "kernelSource": {
-      "name": "miku-KernelSU",
-      "repo": "https://github.com/PhamtomK12/kernel_xiaomi_odin",
-      "branch": "TDA",
-      "device": "odin"
+      "name": "mads-KernelSU",
+      "repo": "https://github.com/TARKZiM/android_kernel_samsung_sm7225.git",
+      "branch": "lineage-20.0",
+      "device": "a42xq"
     },
     "withKernelSU": true,
     "toolchains": [
