@@ -14,9 +14,6 @@ jobs:
     outputs:
       repos: ${{ steps.generate-matrix.outputs.repos }}
     steps:
-      - name: Clean Kernel Source
-        run: make mrproper
-
       - name: "😄 Checkout"
         uses: actions/checkout@v4
 
