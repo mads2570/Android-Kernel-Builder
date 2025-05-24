@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: "😄 Checkout"
         uses: actions/checkout@v4
+        
+      - name: Setup submodules
+        working-directory: ./${{ env.kernelDir }}
+        run: git submodule update --init --recursive --depth 0
 
       - name: "😆 Generate Matrix"
         id: generate-matrix
@@ -48,6 +52,8 @@ jobs:
     steps:
       - name: "✨ Create working dir"
         run: mkdir -p $kernelDir
+      - name: Cleanup
+        uses: rokibhasansagar/slimhub_actions@main
 
       - name: "⭐ Install prerequisites"
         run: |
