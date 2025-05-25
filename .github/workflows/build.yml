@@ -150,14 +150,6 @@ jobs:
 
           cat ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
 
-      - name: Checkout Anykernel
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-          repository: itejo443/AnyKernel3
-          ref: a42xq
-          path: anykernel
-
       - name: "👍 Make defconfig"
         working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
         env:
