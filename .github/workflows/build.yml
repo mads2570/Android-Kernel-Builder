@@ -149,6 +149,10 @@ jobs:
           echo -e "\nCONFIG_KPROBE_EVENTS=y" >> ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
 
           cat ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
+          
+      - name: Clean Source
+        run: make mrproper
+        working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
 
       - name: "👍 Make defconfig"
         working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
@@ -157,15 +161,7 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
-          
-      - name: Clean Source
-        run: make mrproper
-        working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
-
-      - name: Build Kernel
-        run: make
-        working-directory: mads-KernelSU_a42xq/mads-KernelSU
-
+      
       - name: "🎶 Build kernel"
         working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
         env:
