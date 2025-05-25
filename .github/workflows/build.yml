@@ -157,6 +157,14 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
+          
+      - name: Clean Source
+        run: make mrproper
+        working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
+
+      - name: Build Kernel
+        run: make
+        working-directory: mads-KernelSU_a42xq/mads-KernelSU
 
       - name: "🎶 Build kernel"
         working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
