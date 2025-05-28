@@ -8,12 +8,12 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "e https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 --depth=1 --single-branch --no-tags",
+        "repo": "e https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
         "branch": "master",
         "name": "clang"
       },
       {
-        "repo": "e https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 -b android-14.0.0_r0.47 --depth=1 --single-branch --no-tags",
+        "repo": "e https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
         "branch": "b android-14.0.0_r0.",
         "name": "gcc"
       }
