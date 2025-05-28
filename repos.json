@@ -8,23 +8,24 @@
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+        "repo": "https://github.com/proprietary-stuff/llvm-arm-toolchain-ship-10.0.git",
         "branch": "master",
         "name": "clang"
       },
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "main",
+        "repo": "https://github.com/GrowtopiaJaw/aarch64-linux-android-4.9.git",
+        "branch": "aarch64-linux-android-4.9",
         "name": "gcc"
       }
     ],
     "params": {
       "ARCH": "arm64",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CLANG_TRIPLE":"vendor/a42xq_kor_single_defconfig",
+      "KERNEL_LLVM_BIN": "CLANG",
+      "CLANG_TRIPLE": "aarch64-linux-gnu-",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
-      "KERNEL_MAKE_ENV" : "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y CLANG_TRIPLE=aarch64-linux-gnu-",
+      "KERNEL_MAKE_ENV" : "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y",
       "REAL_CC": "KERNEL_LLVM_BIN"
     }
   }
