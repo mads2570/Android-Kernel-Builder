@@ -5,7 +5,7 @@ env:
   OUT_DIR: "out"
 
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
   Set-repos:
