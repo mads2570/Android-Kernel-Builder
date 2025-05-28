@@ -14,7 +14,7 @@
       },
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android-14.0.0_r0.47",
+        "branch": "main",
         "name": "gcc"
       }
     ],
@@ -24,7 +24,7 @@
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
       "KERNEL_MAKE_ENV" : "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y CLANG_TRIPLE=aarch64-linux-gnu-",
-      "CC": ""
+      "CC": "clang"
     }
   }
 ]
