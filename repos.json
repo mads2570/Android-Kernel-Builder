@@ -14,7 +14,7 @@
       },
       {
         "repo": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9",
-        "branch": "android-14.0.0_r0.",
+        "branch": "android-14.0.0_r0",
         "name": "gcc"
       }
     ],
