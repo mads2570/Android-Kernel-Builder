@@ -13,8 +13,8 @@
         "name": "clang"
       },
       {
-        "repo": "https://github.com/GrowtopiaJaw/aarch64-linux-android-4.9.git",
-        "branch": "aarch64-linux-android-4.9",
+        "repo": "https://github.com/growtopiajaw/aarch64-linux-android-4.9.git",
+        "branch": "linaro",
         "name": "gcc"
       }
     ],
