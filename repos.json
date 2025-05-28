@@ -21,7 +21,7 @@
     "params": {
       "ARCH": "arm64",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
-      "CLANG_TRIPLE":"vendor/a42xq_kor_single_defconfig"
+      "CLANG_TRIPLE":"vendor/a42xq_kor_single_defconfig",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
       "KERNEL_MAKE_ENV" : "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y CLANG_TRIPLE=aarch64-linux-gnu-",
