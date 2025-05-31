@@ -1,15 +1,15 @@
 [  {
     "kernelSource": {
       "name": "mads-KernelSU",
-      "repo": "https://github.com/mads2570/android_kernel_samsung_sm7225.git",
-      "branch": "lineage-21.0",
+      "repo": "https://github.com/mads2570/a42-kernel.git",
+      "branch": "main",
       "device": "a42xq"
     },
     "withKernelSU": true,
     "toolchains": [
       {
-        "repo": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
-        "branch": "master",
+        "repo": "https://github.com/SN-Abdullah-Al-Noman/llvm-arm-toolchain-ship-10.0.git",
+        "branch": "main",
         "name": "clang"
       },
       {
@@ -22,7 +22,7 @@
       "ARCH": "arm64",
       "CROSS_COMPILE": "aarch64-linux-gnu-",
       "KERNEL_LLVM_BIN": "CLANG",
-      "CLANG_TRIPLE": "aarch64-linux-gnu-",
+      "CLANG_TRIPLE": "aarch64-linux-gnu- vendor/a42xq_eur_open_defconfig",
       "CROSS_COMPILE_ARM32": "arm-linux-gnueabi-",
       "CROSS_COMPILE_COMPAT": "arm-linux-gnueabi-",
       "KERNEL_MAKE_ENV" : "DTC_EXT=$(pwd)/tools/dtc CONFIG_BUILD_ARM64_DT_OVERLAY=y",
