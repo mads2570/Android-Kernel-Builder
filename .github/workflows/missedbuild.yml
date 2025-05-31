@@ -150,10 +150,7 @@ jobs:
 
           cat ./arch/${{ env.ARCH }}/configs/${{ env.DEFCONFIG_NAME }}
           
-      - name: Clean Source
-        run: make mrproper
-        working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
-
+    
       - name: "👍 Make defconfig"
         working-directory: ./${{ env.kernelDir }}/${{ env.kernelName }}
         env:
